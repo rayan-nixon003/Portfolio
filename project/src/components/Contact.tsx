@@ -5,8 +5,8 @@ import { Mail, Linkedin, Github, FileDown, Send } from 'lucide-react';
 
 const socialLinks = [
   { icon: Mail, label: 'Email', href: 'mailto:rayan.nixon003@gmail.com', gradient: 'from-blue-500 to-cyan-500' },
-  { icon: Linkedin, label: 'LinkedIn', href: 'https://linkedin.com', gradient: 'from-blue-600 to-blue-800' },
-  { icon: Github, label: 'GitHub', href: 'https://github.com', gradient: 'from-gray-700 to-gray-900' },
+  { icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/nixon-g-266a0b283/', gradient: 'from-blue-600 to-blue-800' },
+  { icon: Github, label: 'GitHub', href: 'https://github.com/rayan-nixon003?tab=repositories', gradient: 'from-gray-700 to-gray-900' },
 ];
 
 export default function Contact() {
@@ -89,7 +89,10 @@ export default function Contact() {
                 className="w-full flex items-center justify-center gap-2 px-6 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-2xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
               >
                 <FileDown className="w-5 h-5" />
-                Download Resume
+                <a href='/Nixon_Resume1.pdf' target="_blank">
+                  View Resume
+                </a>
+                
               </motion.button>
             </div>
           </motion.div>
@@ -111,7 +114,7 @@ export default function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
-                  placeholder="John Doe"
+                  placeholder="Enter your Name"
                   required
                 />
               </div>
@@ -127,7 +130,7 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
-                  placeholder="john@example.com"
+                  placeholder="Enter your Mail address"
                   required
                 />
               </div>
@@ -143,7 +146,7 @@ export default function Contact() {
                   onChange={handleChange}
                   rows={6}
                   className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all resize-none"
-                  placeholder="Tell me about your project..."
+                  placeholder="Tell us what's in your mind"
                   required
                 />
               </div>

@@ -11,6 +11,7 @@ const projects = [
     tags: ['Python', 'OpenCV', 'Computer Vision', 'Machine Learning'],
     icon: Camera,
     gradient: 'from-blue-500 to-cyan-500',
+    github : "https://github.com/rayan-nixon003/Robust_Road_Lane_Detection-"
   },
   {
     title: 'Smart Collaboration Platform',
@@ -104,8 +105,12 @@ export default function Projects() {
 
                 <div className="flex gap-4">
                   <button className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105">
-                    <Github className="w-4 h-4" />
-                    GitHub
+                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105">
+                      <Github className="w-4 h-4" />
+                      GitHub
+                    </a>
+
+                    
                   </button>
                   <button className="flex items-center gap-2 px-4 py-2 bg-white text-gray-900 rounded-full font-semibold border border-gray-200 hover:shadow-lg transition-all duration-300 hover:scale-105">
                     <ExternalLink className="w-4 h-4" />
